@@ -5,63 +5,22 @@
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
 
-	import {math} from '$lib/math';
+	import { math } from '$lib/math';
+	import FractionInput from '$lib/mathlive-inputs/FractionInput.svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
-
-	<button class="btn btn-primary">daisyUI Button</button>
+<section class="flex flex-col justify-center items-center gap-4 py-4">
+	<a class="btn btn-primary" sveltekit:prefetch href="./fractions">Fraction Arithmetic</a>
+	<a class="btn btn-primary" sveltekit:prefetch href="./linear-equations/1a">Linear Equations 1A</a>
+	<a class="btn btn-primary" sveltekit:prefetch href="./linear-equations/1b">Linear Equations 1B</a>
 
 	<p>
 		{@html math('2x+3,y')} x
 	</p>
+
+	<FractionInput />
 </section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>

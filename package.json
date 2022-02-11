@@ -2,7 +2,7 @@
 	"name": "math-demos",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
+		"dev": "svelte-kit dev --host",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
@@ -40,7 +40,7 @@
 		"cookie": "^0.4.1",
 		"daisyui": "^1.25.4",
 		"katex": "^0.15.2",
-		"mathlify": "^0.0.11",
+		"mathlify": "^0.0.13",
 		"mathlive": "^0.69.9"
 	}
 }

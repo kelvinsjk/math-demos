@@ -21,8 +21,8 @@ interface DisplayOptions {
  * display math
  */
 export function display(x: string): string {
-	const options = { throwOnError: false, displayMode: true, fleqn: true };
-	return `<div style="overflow-x: auto;">${katex.renderToString(x, options)}</div>`;
+	const options = { throwOnError: false, displayMode: true };
+	return katex.renderToString(x, options);
 }
 
 // /**
