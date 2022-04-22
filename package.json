@@ -42,7 +42,7 @@
 		"cookie": "^0.4.1",
 		"daisyui": "^1.25.4",
 		"katex": "^0.15.2",
-		"mathlify": "^0.0.13",
+		"mathlify": "^0.0.16",
 		"mathlive": "^0.69.9"
 	}
 }
